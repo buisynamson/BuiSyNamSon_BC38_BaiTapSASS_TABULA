@@ -1,0 +1,22 @@
+@import'./variables';
+
+@mixin title_small($fz, $color){
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color;
+    font-size: $fz;
+}
+
+@mixin title_large($fz, $color, $txtTransform){
+    text-transform: $txtTransform;
+    font-size: $fz;
+    color: $color;
+}
+
+@mixin inputArea(){
+    padding: 1em 1em 1em 3.5em ;
+    font-size: .8em ;
+    height: 3.7em;
+    border-radius: 20px ;
+    border: 1px solid $border-form;
+}
